@@ -1,0 +1,26 @@
+# 依赖与构建产物
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 临时日志（调试输出容易带出路径与配置，一律不入库）
+*.log
+
+# 本地配置（含用户自带云 Key，绝不入库）
+.env
+.env.local
+
+# 运行时数据：一个 job 一个 JSON + 本地素材库 + 产物（RETAKE_HOME 默认 ./data）
+data/
+jobs/
+materials/
+out/
+*.tmp
+
+# 文档
+docs/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "name": "@retake/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "本地 HTTP server（Fastify）+ 固定间隔轮询调度器；UI 在 phase 2 再接",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^9.0.1",
+    "@fastify/static": "^8.0.3",
+    "@retake/core": "workspace:*",
+    "fastify": "^5.1.0"
+  }
+}

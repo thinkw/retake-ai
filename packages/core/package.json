@@ -1,0 +1,16 @@
+{
+  "name": "@retake/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "拍同款引擎：状态机 + prompt + planner + adapters + store（无 HTTP、无 UI，可单测）",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

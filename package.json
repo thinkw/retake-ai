@@ -1,0 +1,21 @@
+{
+  "name": "retake-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "拍同款 · 个人本地版：真人换脸 + 换品牌 + 音色克隆，按一条爆款参考片复刻同款营销短视频（本地运行 / BYO Key / 无数据库）",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "dev": "tsx watch packages/server/src/index.ts",
+    "start": "tsx packages/server/src/index.ts",
+    "typecheck": "tsc -p packages/core/tsconfig.json --noEmit && tsc -p packages/server/tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
